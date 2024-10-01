@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: url(images/img.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+    justify-content: space-between;
+    min-width: 120px;
+    margin: 0 auto;
+}
+.navlogo  img{
+    width: 40px;
+    border-radius: 50%;
+}
+.navlogo h2{
+    color: white;
+    font-size: 1.4rem;
+}
+.navlogo .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    color:white;
+}
+ .links {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.links :hover{
+    color: red;
+    cursor: pointer;
+}
+.logobtn{
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 105px;
+    cursor: pointer;
+    background: white;
+}
+.logobtn:hover{
+    background: red;
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: white;
+    border: 2px solid white;
+    transform: translate(-50%,-50%)
+}
+.popup .closebtn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #878787;
+    cursor: pointer;
+}
+.popup .formbox{
+    display: flex;
+}
+.formbox .formdetails{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    color:rgb(251, 251, 251);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url(images/lll.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.formbox h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.formbox .formcontent{
+    width: 100%;
+    padding: 35px;
+}
+form .inputfile{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+form .inputfile input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0..95rem;
+    border-radius: 3px;
+    border: 1px solid #717;
+}
+.inputfile input:focus{
+    border-color:blue;
+}
+.inputfile input:is(:focus,:valid){
+    padding: 16px 15px 0;
+}
+form .inputfile label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #717;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+.inputfile input:is(:focus,:valid)~label{
+    font-size: 0.75rem;
+    color: red;
+    transform: translateY(-120%);
+}
+.formbox a{
+    color: blueviolet;
+    text-decoration: none;
+}
+.formbox a:hover{
+    text-decoration: underline;
+}
+.formbox .forgot{
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+form button:hover{
+    background: rgb(255, 60, 0);
+}
+
+.formbox .bottomlink{
+    text-align: center;
+}
